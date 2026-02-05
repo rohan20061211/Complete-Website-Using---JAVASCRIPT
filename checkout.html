@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothify Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        Kakarvitta Clothing shop
+      </a>
+      <div class="nav-actions">
+        <a class="cart-pill" href="cart.html">
+          Cart
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Checkout</h2>
+    <div class="layout">
+      <section class="panel">
+        <form class="form-grid" data-checkout-form id="details">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Avery Jordan" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="avery@email.com" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(555) 000-0000" required>
+          </div>
+          <div class="field">
+            <label for="address">Shipping address</label>
+            <textarea id="address" name="address" rows="3" placeholder="Street, City, State" required></textarea>
+          </div>
+          <div class="field">
+            <label for="delivery">Delivery option</label>
+            <select id="delivery" name="delivery" required>
+              <option value="standard">Standard - 3 to 5 days</option>
+              <option value="express">Express - 1 to 2 days</option>
+            </select>
+          </div>
+          <button class="button primary" type="submit">Place Order</button>
+          <div class="notice" data-success style="display: none;">
+            Order confirmed! Redirecting you to the storefront...
+          </div>
+        </form>
+      </section>
+
+      <aside class="panel">
+        <h3>Order Summary</h3>
+        <div data-summary-list></div>
+        <div class="summary-row" style="margin-top: 16px;">
+          <span>Total</span>
+          <strong data-summary-total>$0.00</strong>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    Secure checkout demo — no real payments processed.
+  </footer>
+
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/checkout.js"></script>
+</body>
+</html>

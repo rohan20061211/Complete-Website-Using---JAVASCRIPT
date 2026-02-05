@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kakarvitta Clothing Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        Kakarvitta Clothing Shop
+      </a>
+      <div class="nav-actions">
+        <a class="cart-pill" href="cart.html">
+          Cart
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="hero-badge">New Season Drop</div>
+        <h1>Find pieces that feel like your signature.</h1>
+        <p>Curated essentials, sharp silhouettes, and color stories for every day. Build a wardrobe that moves from errands to evenings without missing a beat.</p>
+        <a class="button primary" href="cart.html">View Cart</a>
+      </div>
+      <div class="hero-visual">
+        <div class="orb one"></div>
+        <div class="orb two"></div>
+        <div class="orb three"></div>
+      </div>
+    </section>
+
+    <h2 class="section-title">Featured Looks</h2>
+    <section class="grid" data-product-grid></section>
+  </main>
+
+  <footer class="container footer">
+    Crafted for demo purposes. Add to cart, review, and checkout to simulate an order flow.
+  </footer>
+
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>

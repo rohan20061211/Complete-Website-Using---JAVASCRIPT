@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <titl>Kakarvitta Clothing Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        Kakarvitta Clothing Shop</title>
+      </a>
+      <div class="nav-actions">
+        <a class="cart-pill" href="cart.html">
+          Cart
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Your Cart</h2>
+    <div class="layout">
+      <section class="panel">
+        <div data-cart-empty class="notice" style="display: none;">Your cart is empty. Browse the collection and add items.</div>
+        <div data-cart-list></div>
+      </section>
+
+      <aside class="panel">
+        <h3>Order Summary</h3>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong data-subtotal>$0.00</strong>
+        </div>
+        <div class="summary-row">
+          <span>Estimated tax</span>
+          <strong data-tax>$0.00</strong>
+        </div>
+        <div class="summary-row">
+          <span>Total</span>
+          <strong data-total>$0.00</strong>
+        </div>
+        <div style="display: grid; gap: 10px; margin-top: 18px;">
+          <a class="button primary" href="checkout.html">Checkout</a>
+          <a class="button secondary" href="checkout.html#details">Place Order</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    Review your cart and proceed to checkout to fill in customer details.
+  </footer>
+
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>
